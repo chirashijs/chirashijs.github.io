@@ -1,1 +1,7818 @@
-Hello World!
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>  | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='max-width-4 mx-auto'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'></h3>
+          <div class='mb1'><code></code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#isandroidtablet'
+                  class="">
+                  isAndroidTablet
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isandroid'
+                  class="">
+                  isAndroid
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ischrome'
+                  class="">
+                  isChrome
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isfirefox'
+                  class="">
+                  isFirefox
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ie'
+                  class="">
+                  ie
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isios'
+                  class="">
+                  isIOS
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isipad'
+                  class="">
+                  isIPad
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isiphone'
+                  class="">
+                  isIPhone
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isipod'
+                  class="">
+                  isIPod
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ismobile'
+                  class="">
+                  isMobile
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#issafari'
+                  class="">
+                  isSafari
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#istablet'
+                  class="">
+                  isTablet
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#istouchable'
+                  class="">
+                  isTouchable
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#iswindowsphone'
+                  class="">
+                  isWindowsPhone
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#iswindowstablet'
+                  class="">
+                  isWindowsTablet
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#iswindows'
+                  class="">
+                  isWindows
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ua'
+                  class="">
+                  ua
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#vendor'
+                  class="">
+                  vendor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#for-each'
+                  class="">
+                  for-each
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#for-elements'
+                  class="">
+                  for-elements
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#for-in'
+                  class="">
+                  for-in
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-element'
+                  class="">
+                  get-element
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-elements'
+                  class="">
+                  get-elements
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-selector-all'
+                  class="">
+                  get-selector-all
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-selector'
+                  class="">
+                  get-selector
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#is-dom-element'
+                  class="">
+                  is-dom-element
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#add-class'
+                  class="">
+                  add-class
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#append'
+                  class="">
+                  append
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#attr'
+                  class="">
+                  attr
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#clone'
+                  class="">
+                  clone
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#closest'
+                  class="">
+                  closest
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#create-element'
+                  class="">
+                  create-element
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#data'
+                  class="">
+                  data
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#empty'
+                  class="">
+                  empty
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#filter'
+                  class="">
+                  filter
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#find-one'
+                  class="">
+                  find-one
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#find'
+                  class="">
+                  find
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-attr'
+                  class="">
+                  get-attr
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-data'
+                  class="">
+                  get-data
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-html'
+                  class="">
+                  get-html
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-prop'
+                  class="">
+                  get-prop
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#has-class'
+                  class="">
+                  has-class
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#html'
+                  class="">
+                  html
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#index-in-parent'
+                  class="">
+                  index-in-parent
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#insert-after'
+                  class="">
+                  insert-after
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#insert-before'
+                  class="">
+                  insert-before
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#next'
+                  class="">
+                  next
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#parent'
+                  class="">
+                  parent
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#prev'
+                  class="">
+                  prev
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#prop'
+                  class="">
+                  prop
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#remove-class'
+                  class="">
+                  remove-class
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#remove'
+                  class="">
+                  remove
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-attr'
+                  class="">
+                  set-attr
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-data'
+                  class="">
+                  set-data
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-html'
+                  class="">
+                  set-html
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-prop'
+                  class="">
+                  set-prop
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#toggle-class'
+                  class="">
+                  toggle-class
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#drag'
+                  class="">
+                  drag
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hover'
+                  class="">
+                  hover
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#load'
+                  class="">
+                  load
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#off'
+                  class="">
+                  off
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#on'
+                  class="">
+                  on
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ready'
+                  class="">
+                  ready
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#trigger'
+                  class="">
+                  trigger
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-height'
+                  class="">
+                  get-height
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-size'
+                  class="">
+                  get-size
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-style'
+                  class="">
+                  get-style
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#get-width'
+                  class="">
+                  get-width
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#height'
+                  class="">
+                  height
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#hide'
+                  class="">
+                  hide
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#matrix'
+                  class="">
+                  matrix
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#matrix2d'
+                  class="">
+                  matrix2d
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#matrix3d'
+                  class="">
+                  matrix3d
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#offset'
+                  class="">
+                  offset
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#position'
+                  class="">
+                  position
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#scale'
+                  class="">
+                  scale
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#scale2d'
+                  class="">
+                  scale2d
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#scale3d'
+                  class="">
+                  scale3d
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#screen-position'
+                  class="">
+                  screen-position
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-height'
+                  class="">
+                  set-height
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-size'
+                  class="">
+                  set-size
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-style'
+                  class="">
+                  set-style
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#set-width'
+                  class="">
+                  set-width
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#show'
+                  class="">
+                  show
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#size'
+                  class="">
+                  size
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transform'
+                  class="">
+                  transform
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#translate'
+                  class="">
+                  translate
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#translate2d'
+                  class="">
+                  translate2d
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#translate3d'
+                  class="">
+                  translate3d
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#width'
+                  class="">
+                  width
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#debounce'
+                  class="">
+                  debounce
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deep-clone'
+                  class="">
+                  deep-clone
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#defaultify'
+                  class="">
+                  defaultify
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#memoize'
+                  class="">
+                  memoize
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#random-between'
+                  class="">
+                  random-between
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#random-int-between'
+                  class="">
+                  random-int-between
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#range'
+                  class="">
+                  range
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#throttle'
+                  class="">
+                  throttle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transform-to-2d-matrix'
+                  class="">
+                  transform-to-2d-matrix
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transform-to-3d-matrix'
+                  class="">
+                  transform-to-3d-matrix
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isandroidtablet'>
+      isAndroidTablet
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is an Android Tablet based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isAndroidTablet</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isandroid'>
+      isAndroid
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is running Android based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isAndroid</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='ischrome'>
+      isChrome
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the browser is Chrome or Chromium based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isChrome</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isfirefox'>
+      isFirefox
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the browser is Firefox based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isFirefox</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='ie'>
+      ie
+    </h3>
+    
+  </div>
+  
+
+  <p>Version number if the browser is Internet Explorer or false based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>ie</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isios'>
+      isIOS
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is running iOS based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isIOS</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isipad'>
+      isIPad
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is an iPad based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isIPad</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isiphone'>
+      isIPhone
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is an iPhone based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isIPhone</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='isipod'>
+      isIPod
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is an iPod based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isIPod</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='ismobile'>
+      isMobile
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is a mobile based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isMobile</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='issafari'>
+      isSafari
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the browser is Safari based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isSafari</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='istablet'>
+      isTablet
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is a tablet based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isTablet</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='istouchable'>
+      isTouchable
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device handle touches events.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isTouchable</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='iswindowsphone'>
+      isWindowsPhone
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is a Windows Phone based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isWindowsPhone</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='iswindowstablet'>
+      isWindowsTablet
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is a Windows Tablet based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isWindowsTablet</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='iswindows'>
+      isWindows
+    </h3>
+    
+  </div>
+  
+
+  <p>Variable true if the device is running Windows based on User Agent.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isWindows</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='ua'>
+      ua
+    </h3>
+    
+  </div>
+  
+
+  <p>User Agent in lower case.</p>
+
+
+  <div class='pre p1 fill-light mt0'>ua</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='vendor'>
+      vendor
+    </h3>
+    
+  </div>
+  
+
+  <p>Navigator&#x27;s vendor in lower case.</p>
+
+
+  <div class='pre p1 fill-light mt0'>vendor</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='for-each'>
+      for-each
+    </h3>
+    
+  </div>
+  
+
+  <p>Iterates over elements and apply callback on each one.</p>
+
+
+  <div class='pre p1 fill-light mt0'>for-each</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The function to call for each iteratee
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>forceOrder</span> <code class='quiet'>([bool]
+            (default <code>false</code>)
+            )</code> Respect elements order
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='for-elements'>
+      for-elements
+    </h3>
+    
+  </div>
+  
+
+  <p>Iterates over dom elements and apply callback on each one.</p>
+
+
+  <div class='pre p1 fill-light mt0'>for-elements</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The function to call for each iteratee
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>forceOrder</span> <code class='quiet'>([bool]
+            (default <code>false</code>)
+            )</code> Respect elements order
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='for-in'>
+      for-in
+    </h3>
+    
+  </div>
+  
+
+  <p>Iterates over object&#x27;s keys and apply callback on each one.</p>
+
+
+  <div class='pre p1 fill-light mt0'>for-in</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code> The iterable
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The function to call for each iteratee
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>forceOrder</span> <code class='quiet'>([bool]
+            (default <code>false</code>)
+            )</code> Respect keys order
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        object - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-element'>
+      get-element
+    </h3>
+    
+  </div>
+  
+
+  <p>Get Dom Element from iterable or selector.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-element</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        domElement - The dom element from element
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-elements'>
+      get-elements
+    </h3>
+    
+  </div>
+  
+
+  <p>Get Dom Element from iterable or selector.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-elements</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        domElements - The dom elements from elements
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-selector-all'>
+      get-selector-all
+    </h3>
+    
+  </div>
+  
+
+  <p>Get array of dom elements from selector.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-selector-all</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>selector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The query selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        domElements - The dom elements matching selector
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-selector'>
+      get-selector
+    </h3>
+    
+  </div>
+  
+
+  <p>Get a dom element from selector.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-selector</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>selector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The query selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        domElement - The first dom element matching selector
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='is-dom-element'>
+      is-dom-element
+    </h3>
+    
+  </div>
+  
+
+  <p>Test if element is a dom element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is-dom-element</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> If element doesn&#x27;t match of this types false will be returned
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>bool</code>:
+        isDomElement - true if element is a dom element, false otherwise
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='add-class'>
+      add-class
+    </h3>
+    
+  </div>
+  
+
+  <p>Add all classes on each elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>add-class</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>classes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The classes seperated with spaces
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='append'>
+      append
+    </h3>
+    
+  </div>
+  
+
+  <p>Append node to each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>append</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>node</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> Dom element or html string or tag to create it
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>attributes</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>]
+            (default <code>{}</code>)
+            )</code> The object of attributes, only used with node creation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='attr'>
+      attr
+    </h3>
+    
+  </div>
+  
+
+  <p>Get attribute option from element if option is a string,
+set attributes from option keys to option values on elements
+if option is an object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>attr</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable, selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>option</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code> attribute name or attribute names and values association
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        value or elements - Value for option attribute or elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='clone'>
+      clone
+    </h3>
+    
+  </div>
+  
+
+  <p>Clone element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>clone</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The dom element or selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        clone - The clone of element
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='closest'>
+      closest
+    </h3>
+    
+  </div>
+  
+
+  <p>Get closest element matching the tested value traveling up the DOM tree from element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>closest</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The dom element or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>tested</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element to match
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>level</span> <code class='quiet'>([{value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}])</code> The value is incremented for each parent tested
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(bool | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        matchedElement - The matched element or false
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='create-element'>
+      create-element
+    </h3>
+    
+  </div>
+  
+
+  <p>Create a dom element from an HTML string or tag.</p>
+
+
+  <div class='pre p1 fill-light mt0'>create-element</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>string</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The html string or tag
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>attributes</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>]
+            (default <code>{}</code>)
+            )</code> The object of attributes
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        element - The dom element created from the string
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='data'>
+      data
+    </h3>
+    
+  </div>
+  
+
+  <p>Get data attribute option from element if option is a string,
+set data attributes from option keys to option values on elements
+if option is an object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>data</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable, selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>option</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>))</code> data attribute name or data attribute names and values association
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        value or elements - Value for option data attribute or elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='empty'>
+      empty
+    </h3>
+    
+  </div>
+  
+
+  <p>Remove children of provided dom elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>empty</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable, selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='filter'>
+      filter
+    </h3>
+    
+  </div>
+  
+
+  <p>Filter items matching the tested value from elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>filter</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable, selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>tested</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element to match
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='find-one'>
+      find-one
+    </h3>
+    
+  </div>
+  
+
+  <p>Find the first element&#x27;s child matching the selector.</p>
+
+
+  <div class='pre p1 fill-light mt0'>find-one</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>selector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        element - The first child of element matching the selector
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='find'>
+      find
+    </h3>
+    
+  </div>
+  
+
+  <p>Find the element&#x27;s children matching the selector.</p>
+
+
+  <div class='pre p1 fill-light mt0'>find</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>selector</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        elements - The children of element matching the selector
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-attr'>
+      get-attr
+    </h3>
+    
+  </div>
+  
+
+  <p>Get value of the name attribute on element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-attr</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The attribute&#x27;s name
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        value - The value for the attribute
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-data'>
+      get-data
+    </h3>
+    
+  </div>
+  
+
+  <p>Get value of the name date attribute on element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-data</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The data attribute&#x27;s name
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        value - The value for the data attribute
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-html'>
+      get-html
+    </h3>
+    
+  </div>
+  
+
+  <p>Get the inner html of the element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-html</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        innerHTML - The inner html of the element
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-prop'>
+      get-prop
+    </h3>
+    
+  </div>
+  
+
+  <p>Get the value for the property name on the element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-prop</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The name of the property
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        innerHTML - The inner html of the element
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='has-class'>
+      has-class
+    </h3>
+    
+  </div>
+  
+
+  <p>Test if element has all the classes.</p>
+
+
+  <div class='pre p1 fill-light mt0'>has-class</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>classes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The classes seperated with spaces
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>bool</code>:
+        hasClass - True if element has all the classes, false otherwise
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='html'>
+      html
+    </h3>
+    
+  </div>
+  
+
+  <p>Set inner html of elements if string is provided, get it otherwise.</p>
+
+
+  <div class='pre p1 fill-light mt0'>html</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>string</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</code> The content to inject in the elements
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        innerHTML or elements - The inner html of the elements or elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='index-in-parent'>
+      index-in-parent
+    </h3>
+    
+  </div>
+  
+
+  <p>Get the position of element in his parent&#x27;s children.</p>
+
+
+  <div class='pre p1 fill-light mt0'>index-in-parent</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        index - The position of element in his parent&#x27;s children
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='insert-after'>
+      insert-after
+    </h3>
+    
+  </div>
+  
+
+  <p>Insert node to each element&#x27;s parent of elements after element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>insert-after</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>node</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> Dom element or html string or tag to create it
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='insert-before'>
+      insert-before
+    </h3>
+    
+  </div>
+  
+
+  <p>Insert node to each element&#x27;s parent of elements after element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>insert-before</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>node</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> Dom element or html string or tag to create it
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='next'>
+      next
+    </h3>
+    
+  </div>
+  
+
+  <p>Get the next sibling of element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>next</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        element - The next element
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='parent'>
+      parent
+    </h3>
+    
+  </div>
+  
+
+  <p>Get the parent node of the element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>parent</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        element - The parent node
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='prev'>
+      prev
+    </h3>
+    
+  </div>
+  
+
+  <p>Get the previous sibling of element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>prev</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        element - The previous element
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='prop'>
+      prop
+    </h3>
+    
+  </div>
+  
+
+  <p>Get property option from element if option is a string,
+set properties from option keys to option values on elements
+if option is an object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>prop</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The iterable, selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>option</span> <code class='quiet'>(Any)</code> 
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</code>:
+        value or elements - Value for option property or elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='remove-class'>
+      remove-class
+    </h3>
+    
+  </div>
+  
+
+  <p>Remove all classes on each elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>remove-class</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>classes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The classes seperated with spaces
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='remove'>
+      remove
+    </h3>
+    
+  </div>
+  
+
+  <p>Remove all elements from dom.</p>
+
+
+  <div class='pre p1 fill-light mt0'>remove</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The removed elements
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-attr'>
+      set-attr
+    </h3>
+    
+  </div>
+  
+
+  <p>Set attributes from attributes object keys to values on elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-attr</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>attributes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code> attribute names and values association
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-data'>
+      set-data
+    </h3>
+    
+  </div>
+  
+
+  <p>Set data attributes from attributes object keys to values on elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-data</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>attributes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code> attribute names and values association
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-html'>
+      set-html
+    </h3>
+    
+  </div>
+  
+
+  <p>Set inner html of elements to string.</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-html</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>string</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The content to inject in the elements
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-prop'>
+      set-prop
+    </h3>
+    
+  </div>
+  
+
+  <p>Set properties from props object keys to values on elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-prop</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code> properties names and values association
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='toggle-class'>
+      toggle-class
+    </h3>
+    
+  </div>
+  
+
+  <p>Toggle all classes on each elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>toggle-class</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>classes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The classes seperated with spaces
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='drag'>
+      drag
+    </h3>
+    
+  </div>
+  
+
+  <p>Bind drag listener on each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>drag</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>move</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The move callback
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>begin</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The begin callback
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>end</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The end callback
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        offObject - An object with off method for unbinding
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='hover'>
+      hover
+    </h3>
+    
+  </div>
+  
+
+  <p>Bind hover listener on each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>hover</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>enter</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The enter callback
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>leave</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The leave callback
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        offObject - An object with off method for unbinding
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='load'>
+      load
+    </h3>
+    
+  </div>
+  
+
+  <p>Bind hover listener on each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>load</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>eachCallback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback on each load event
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>allCallback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback when all elements have been loaded
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>once</span> <code class='quiet'>([bool])</code> = true - Trigger only once for each media if true
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>testSrc</span> <code class='quiet'>([bool])</code> = true - If true callback will be called with error when an element doesn&#x27;t have src
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        offObject - An object with off method for unbinding
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='off'>
+      off
+    </h3>
+    
+  </div>
+  
+
+  <p>Bind hover listener on each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>off</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>events</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The events that should be bound seperated with spaces
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback used for event binding
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='on'>
+      on
+    </h3>
+    
+  </div>
+  
+
+  <p>Bind events listener on each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>on</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>events</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The events that should be bound seperated with spaces
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback used for event binding
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='ready'>
+      ready
+    </h3>
+    
+  </div>
+  
+
+  <p>Execute callback when dom is ready.</p>
+
+
+  <div class='pre p1 fill-light mt0'>ready</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='trigger'>
+      trigger
+    </h3>
+    
+  </div>
+  
+
+  <p>Trigger events on elements with data</p>
+
+
+  <div class='pre p1 fill-light mt0'>trigger</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>events</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code> The events that should be tiggered seperated with spaces
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The events&#x27; data
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-height'>
+      get-height
+    </h3>
+    
+  </div>
+  
+
+  <p>Get height in pixels of element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-height</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        height - The height in pixels
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-size'>
+      get-size
+    </h3>
+    
+  </div>
+  
+
+  <p>Get size in pixels of element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-size</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        size - The size in pixels
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-style'>
+      get-style
+    </h3>
+    
+  </div>
+  
+
+  <p>Get style property of element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-style</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>property</span> <code class='quiet'>(Any)</code> 
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        value - The value for the property
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='get-width'>
+      get-width
+    </h3>
+    
+  </div>
+  
+
+  <p>Get width in pixels of element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>get-width</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        width - The width in pixels
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='height'>
+      height
+    </h3>
+    
+  </div>
+  
+
+  <p>Get height in pixels of element or first element of elements if height is undefined,
+else set height to all element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>height</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>height</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>])</code> The height
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        height | elements - The height in pixels | elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='hide'>
+      hide
+    </h3>
+    
+  </div>
+  
+
+  <p>Hide each element of elements using visibility.</p>
+
+
+  <div class='pre p1 fill-light mt0'>hide</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='matrix'>
+      matrix
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided transformation as a matrix (3d if supported) on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>matrix</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='matrix2d'>
+      matrix2d
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided transformation as a 2D matrix on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>matrix2d</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='matrix3d'>
+      matrix3d
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided transformation as a 3D matrix on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>matrix3d</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='offset'>
+      offset
+    </h3>
+    
+  </div>
+  
+
+  <p>Return the top and left offset of an element. Offset is relative to web page</p>
+
+
+  <div class='pre p1 fill-light mt0'>offset</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        offset
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='position'>
+      position
+    </h3>
+    
+  </div>
+  
+
+  <p>Return the top and left position of an element. Position is relative to parent</p>
+
+
+  <div class='pre p1 fill-light mt0'>position</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        position
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='scale'>
+      scale
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided scale transformation (3d if supported) on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>scale</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keep</span> <code class='quiet'>([bool])</code> Preserve previous transformation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='scale2d'>
+      scale2d
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided scale transformation on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>scale2d</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keep</span> <code class='quiet'>([bool])</code> Preserve previous transformation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='scale3d'>
+      scale3d
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided 3D scale transformation on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>scale3d</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keep</span> <code class='quiet'>([bool])</code> Preserve previous transformation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='screen-position'>
+      screen-position
+    </h3>
+    
+  </div>
+  
+
+  <p>Return the screen relative position of an element</p>
+
+
+  <div class='pre p1 fill-light mt0'>screen-position</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        screenPosition
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-height'>
+      set-height
+    </h3>
+    
+  </div>
+  
+
+  <p>Set the provided height to elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-height</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>height</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The height
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-size'>
+      set-size
+    </h3>
+    
+  </div>
+  
+
+  <p>Set the provided size to elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-size</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>size</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The size as an object with width and height
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-style'>
+      set-style
+    </h3>
+    
+  </div>
+  
+
+  <p>Set the provided style to elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-style</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>style</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The style options as object linking value to property
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='set-width'>
+      set-width
+    </h3>
+    
+  </div>
+  
+
+  <p>Set the provided width to elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>set-width</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>width</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The width
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='show'>
+      show
+    </h3>
+    
+  </div>
+  
+
+  <p>Reset visibility style attribute for elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>show</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements - The iterable for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='size'>
+      size
+    </h3>
+    
+  </div>
+  
+
+  <p>Get size in pixels of element or first element of elements if size is undefined,
+else set size to all element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>size</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>size</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>])</code> The size as an object with width and height
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        size | elements - The size as an object with width and height in pixels | elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='transform'>
+      transform
+    </h3>
+    
+  </div>
+  
+
+  <p>Set the provided transformation to all elements using a matrix if needed and 3D if supported.</p>
+
+
+  <div class='pre p1 fill-light mt0'>transform</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>])</code> The transformation as an object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        size | elements - The size as an object with width and height in pixels | elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='translate'>
+      translate
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided translate transformation (3d if supported) on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>translate</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keep</span> <code class='quiet'>([bool])</code> Preserve previous transformation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='translate2d'>
+      translate2d
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided translate transformation on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>translate2d</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keep</span> <code class='quiet'>([bool])</code> Preserve previous transformation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='translate3d'>
+      translate3d
+    </h3>
+    
+  </div>
+  
+
+  <p>Apply the provided 3D translate transformation on each element of elements</p>
+
+
+  <div class='pre p1 fill-light mt0'>translate3d</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>keep</span> <code class='quiet'>([bool])</code> Preserve previous transformation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='width'>
+      width
+    </h3>
+    
+  </div>
+  
+
+  <p>Get width in pixels of element or first element of elements if width is undefined,
+else set width to all element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>width</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>width</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>])</code> The width
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        width | elements - The width in pixels | elements for chaining
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='debounce'>
+      debounce
+    </h3>
+    
+  </div>
+  
+
+  <p>Execute callback once for all fired during a waiting time.</p>
+
+
+  <div class='pre p1 fill-light mt0'>debounce</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback function
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>wait</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The waiting time in milliseconds
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>immediate</span> <code class='quiet'>([bool]
+            (default <code>false</code>)
+            )</code> Execute callback on first trigger
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        debounced - The debounced callback with cancel method
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='deep-clone'>
+      deep-clone
+    </h3>
+    
+  </div>
+  
+
+  <p>Return a deep clone of object.</p>
+
+
+  <div class='pre p1 fill-light mt0'>deep-clone</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The object to clone
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        clone - The clone of the object
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='defaultify'>
+      defaultify
+    </h3>
+    
+  </div>
+  
+
+  <p>Copy all defaults properties to options.</p>
+
+
+  <div class='pre p1 fill-light mt0'>defaultify</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The received options
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>defaults</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The default values
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        merge - The merged options
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='memoize'>
+      memoize
+    </h3>
+    
+  </div>
+  
+
+  <p>Cache callbacks result for arguments and return cached results when called with the same ones</p>
+
+
+  <div class='pre p1 fill-light mt0'>memoize</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The function to call
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        memoized - The memoized callback
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='random-between'>
+      random-between
+    </h3>
+    
+  </div>
+  
+
+  <p>Return a random number between two values</p>
+
+
+  <div class='pre p1 fill-light mt0'>random-between</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>max</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The maximum value
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>min</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]
+            (default <code>0</code>)
+            )</code> The minimum value
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        value - A random value between min and max
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='random-int-between'>
+      random-int-between
+    </h3>
+    
+  </div>
+  
+
+  <p>Return a random integer between two integers</p>
+
+
+  <div class='pre p1 fill-light mt0'>random-int-between</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>max</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The maximum integer
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>min</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]
+            (default <code>0</code>)
+            )</code> The minimum integer
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        value - A random interger between min and max
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='range'>
+      range
+    </h3>
+    
+  </div>
+  
+
+  <p>Return value if in the range, max if greater, min if lower</p>
+
+
+  <div class='pre p1 fill-light mt0'>range</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The tested value
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>max</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]
+            (default <code>1</code>)
+            )</code> The maximum value
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>min</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]
+            (default <code>0</code>)
+            )</code> The minimum value
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        value - A random interger between min and max or max if value isn&#x27;t a number
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='throttle'>
+      throttle
+    </h3>
+    
+  </div>
+  
+
+  <p>Execute callback at most once in wait time.</p>
+
+
+  <div class='pre p1 fill-light mt0'>throttle</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code> The callback function
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>wait</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code> The waiting time in milliseconds
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>leading</span> <code class='quiet'>([bool]
+            (default <code>false</code>)
+            )</code> Execute callback on first trigger
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>trailing</span> <code class='quiet'>([bool]
+            (default <code>false</code>)
+            )</code> Execute callback wait time after last execution
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        throttled - The throttled callback with cancel method
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='transform-to-2d-matrix'>
+      transform-to-2d-matrix
+    </h3>
+    
+  </div>
+  
+
+  <p>Convert a transformation as object to a 2d matrix as object</p>
+
+
+  <div class='pre p1 fill-light mt0'>transform-to-2d-matrix</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        matrix - The 2d matrix
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    <h3 class='fl m0' id='transform-to-3d-matrix'>
+      transform-to-3d-matrix
+    </h3>
+    
+  </div>
+  
+
+  <p>Convert a transformation as object to a 3d matrix as object</p>
+
+
+  <div class='pre p1 fill-light mt0'>transform-to-3d-matrix</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code> The transformation object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        matrix - The 3d matrix
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
