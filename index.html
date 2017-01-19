@@ -2,29 +2,19 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>chirashi v5.0 | Documentation</title>
+  <title>Chirashi v5.1.5 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
   <link href='assets/github.css' type='text/css' rel='stylesheet' />
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-89649102-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </head>
 <body class='documentation'>
   <div class='max-width-4 mx-auto'>
     <div class='clearfix md-mxn2'>
       <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
         <div class='py1 px2'>
-          <h3 class='mb0 no-anchor'>ChirashiJS</h3>
-          <div class='mb1'><code>v5.0.0</code></div>
+          <h3 class='mb0 no-anchor'>Chirashi</h3>
+          <div class='mb1'><code>v5.1.5</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -75,9 +65,9 @@
 
 
                 <li><a
-                  href='#forincallback'
+                  href='#forin'
                   class="">
-                  forInCallback
+                  forIn
 
                 </a>
 
@@ -85,9 +75,9 @@
 
 
                 <li><a
-                  href='#forin'
+                  href='#forincallback'
                   class="">
-                  forIn
+                  forInCallback
 
                 </a>
 
@@ -415,6 +405,16 @@
 
 
                 <li><a
+                  href='#unbindcallback'
+                  class="">
+                  unbindCallback
+
+                </a>
+
+                </li>
+
+
+                <li><a
                   href='#bind'
                   class="">
                   bind
@@ -435,26 +435,6 @@
 
 
                 <li><a
-                  href='#unbindcallback'
-                  class="">
-                  unbindCallback
-
-                </a>
-
-                </li>
-
-
-                <li><a
-                  href='#on'
-                  class="">
-                  on
-
-                </a>
-
-                </li>
-
-
-                <li><a
                   href='#eventcallback'
                   class="">
                   eventCallback
@@ -468,6 +448,16 @@
                   href='#offcallback'
                   class="">
                   offCallback
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#on'
+                  class="">
+                  on
 
                 </a>
 
@@ -508,6 +498,16 @@
                   href='#clearstyle'
                   class="">
                   clearStyle
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#clientrect'
+                  class="">
+                  clientRect
 
                 </a>
 
@@ -1062,71 +1062,6 @@ Chirashi.forElements([yakitori, sashimi], <span class="hljs-built_in">console</s
 
   <div class='clearfix'>
 
-    <h3 class='fl m0' id='forincallback'>
-      forInCallback
-    </h3>
-
-
-  </div>
-
-
-  <p>Callback to apply on each key-value pair.</p>
-
-
-  <div class='pre p1 fill-light mt0'>forInCallback</div>
-
-
-
-
-
-
-
-
-
-
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          </div>
-
-        </div>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>value</span> <code class='quiet'>(any)</code>
-          </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-  <div class='clearfix'>
-
     <h3 class='fl m0' id='forin'>
       forIn
     </h3>
@@ -1234,6 +1169,71 @@ Chirashi.forIn(californiaRoll, (key, value) =&gt; {
 <span class="hljs-comment">// name -&gt; California Roll</span>
 <span class="hljs-comment">// price -&gt; 4.25</span>
 <span class="hljs-comment">// recipe -&gt; ['avocado', 'cucumber', 'crab', 'mayonnaise', 'sushi rice', 'seaweed']</span></pre>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='forincallback'>
+      forInCallback
+    </h3>
+
+
+  </div>
+
+
+  <p>Callback to apply on each key-value pair.</p>
+
+
+  <div class='pre p1 fill-light mt0'>forInCallback</div>
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(any)</code>
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 
 
 
@@ -4309,6 +4309,65 @@ Chirashi.toggleClass([maki, scdMaki], {
 
   <div class='clearfix'>
 
+    <h3 class='fl m0' id='unbindcallback'>
+      unbindCallback
+    </h3>
+
+
+  </div>
+
+
+  <p>Called to unbind one or all events.</p>
+
+
+  <div class='pre p1 fill-light mt0'>unbindCallback</div>
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>events</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</code> The events to unbind. Must be provided in the same syntax as in input.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
     <h3 class='fl m0' id='bind'>
       bind
     </h3>
@@ -4510,18 +4569,18 @@ listener.unbind() <span class="hljs-comment">//remove all listeners</span></pre>
 
   <div class='clearfix'>
 
-    <h3 class='fl m0' id='unbindcallback'>
-      unbindCallback
+    <h3 class='fl m0' id='eventcallback'>
+      eventCallback
     </h3>
 
 
   </div>
 
 
-  <p>Called to unbind one or all events.</p>
+  <p>Callback to execute on event.</p>
 
 
-  <div class='pre p1 fill-light mt0'>unbindCallback</div>
+  <div class='pre p1 fill-light mt0'>eventCallback</div>
 
 
 
@@ -4534,6 +4593,73 @@ listener.unbind() <span class="hljs-comment">//remove all listeners</span></pre>
 
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
     <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">Event</a>)</code> Triggered event.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='offcallback'>
+      offCallback
+    </h3>
+
+
+  </div>
+
+
+  <p>Called to remove one or all events listeners of one or all elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>offCallback</div>
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>offElements</span> <code class='quiet'>([(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)])</code> The iterable, selector or elements to unbind.
+
+          </div>
+
+        </div>
 
         <div class='space-bottom0'>
           <div>
@@ -4676,132 +4802,6 @@ Chirashi.trigger(sushi, <span class="hljs-string">'click'</span>) <span class="h
 <span class="hljs-comment">// LOGS: "clicked" &lt;a class="sushi wasabi"&gt;&lt;/a&gt;</span>
 listener.off(maki, <span class="hljs-string">'click'</span>) <span class="hljs-comment">//remove click event listener on maki</span>
 listener.off() <span class="hljs-comment">//remove all listeners from all elements</span></pre>
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-  <div class='clearfix'>
-
-    <h3 class='fl m0' id='eventcallback'>
-      eventCallback
-    </h3>
-
-
-  </div>
-
-
-  <p>Callback to execute on event.</p>
-
-
-  <div class='pre p1 fill-light mt0'>eventCallback</div>
-
-
-
-
-
-
-
-
-
-
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">Event</a>)</code> Triggered event.
-
-          </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-  <div class='clearfix'>
-
-    <h3 class='fl m0' id='offcallback'>
-      offCallback
-    </h3>
-
-
-  </div>
-
-
-  <p>Called to remove one or all events listeners of one or all elements.</p>
-
-
-  <div class='pre p1 fill-light mt0'>offCallback</div>
-
-
-
-
-
-
-
-
-
-
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>offElements</span> <code class='quiet'>([(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)])</code> The iterable, selector or elements to unbind.
-
-          </div>
-
-        </div>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>events</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</code> The events to unbind. Must be provided in the same syntax as in input.
-
-          </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
 
 
 
@@ -5292,6 +5292,158 @@ Chirashi.setStyle(maki, {
 })
 Chirashi.clearStyle(maki, [<span class="hljs-string">'position'</span>, top])
 Chirashi.clearStyle(maki, <span class="hljs-string">'width, height, background'</span>)</pre>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='clientrect'>
+      clientRect
+    </h3>
+
+
+  </div>
+
+
+  <p>Return the screen relative position of an element.</p>
+
+
+  <div class='pre p1 fill-light mt0'>clientRect(element: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</div>
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>))</code> The selector or dom element.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>:
+        clientRect - Element's screen position or false if no element found.
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Object.bottom</code>:
+        bottom - Y-coordinate, relative to the viewport origin, of the bottom of the rectangle box.
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Object.height</code>:
+        height - Height of the rectangle box (This is identical to bottom minus top).
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Object.left</code>:
+        left - X-coordinate, relative to the viewport origin, of the left of the rectangle box.
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Object.right</code>:
+        right - X-coordinate, relative to the viewport origin, of the right of the rectangle box.
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Object.top</code>:
+        top - Y-coordinate, relative to the viewport origin, of the top of the rectangle box.
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Object.width</code>:
+        width - Width of the rectangle box (This is identical to right minus left).
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+
+
+      <pre class='p1 overflow-auto round fill-light'>esnext
+<span class="hljs-keyword">import</span> { setStyle, append, clientRect } <span class="hljs-keyword">from</span> <span class="hljs-string">'chirashi'</span>
+
+setStyle([<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-built_in">document</span>.body], {
+  <span class="hljs-attr">position</span>: <span class="hljs-string">'relative'</span>,
+  <span class="hljs-attr">margin</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">padding</span>: <span class="hljs-number">0</span>
+})
+
+append(<span class="hljs-built_in">document</span>.body, <span class="hljs-string">'.poulp'</span>)
+
+<span class="hljs-keyword">const</span> poulp = setStyle(<span class="hljs-string">'.poulp'</span>, {
+  <span class="hljs-attr">display</span>: <span class="hljs-string">'block'</span>,
+  <span class="hljs-attr">position</span>: <span class="hljs-string">'absolute'</span>,
+  <span class="hljs-attr">top</span>: <span class="hljs-number">200</span>,
+  <span class="hljs-attr">left</span>: <span class="hljs-number">240</span>,
+  <span class="hljs-attr">width</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">height</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">background</span>: <span class="hljs-string">'red'</span>
+})
+
+clientRect(poulp) <span class="hljs-comment">// returns: { bottom: 300, height: 100, left: 240, right: 0, top: 200, width: 100 }</span></pre>
+
+
+      <pre class='p1 overflow-auto round fill-light'>es5
+Chirashi.setStyle([<span class="hljs-built_in">document</span>.documentElement, <span class="hljs-built_in">document</span>.body], {
+  <span class="hljs-attr">position</span>: <span class="hljs-string">'relative'</span>,
+  <span class="hljs-attr">margin</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">padding</span>: <span class="hljs-number">0</span>
+})
+
+Chirashi.append(<span class="hljs-built_in">document</span>.body, <span class="hljs-string">'.poulp'</span>)
+
+<span class="hljs-keyword">var</span> poulp = Chirashi.setStyle(<span class="hljs-string">'.poulp'</span>, {
+  <span class="hljs-attr">display</span>: <span class="hljs-string">'block'</span>,
+  <span class="hljs-attr">position</span>: <span class="hljs-string">'absolute'</span>,
+  <span class="hljs-attr">top</span>: <span class="hljs-number">200</span>,
+  <span class="hljs-attr">left</span>: <span class="hljs-number">240</span>,
+  <span class="hljs-attr">width</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">height</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">background</span>: <span class="hljs-string">'red'</span>
+})
+
+Chirashi.clientRect(poulp) <span class="hljs-comment">// returns: { bottom: 300, height: 100, left: 240, right: 0, top: 200, width: 100 }</span></pre>
 
 
 
@@ -6142,50 +6294,14 @@ Chirashi.position(salmon) <span class="hljs-comment">// returns: { top: 20, left
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.bottom</code>:
-        bottom - Y-coordinate, relative to the viewport origin, of the bottom of the rectangle box. Read only.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.height</code>:
-        height - Height of the rectangle box (This is identical to bottom minus top). Read only.
+      <code>Object.top</code>:
+        top - Y-coordinate, relative to the viewport origin, of the top of the rectangle box.
 
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>Object.left</code>:
-        left - X-coordinate, relative to the viewport origin, of the left of the rectangle box. Read only.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.right</code>:
-        right - X-coordinate, relative to the viewport origin, of the right of the rectangle box. Read only.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.top</code>:
-        top - Y-coordinate, relative to the viewport origin, of the top of the rectangle box. Read only.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.width</code>:
-        width - Width of the rectangle box (This is identical to right minus left). Read only.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.x</code>:
-        x - X-coordinate, relative to the viewport origin, of the left of the rectangle box. Read only.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>Object.y</code>:
-        y - Y-coordinate, relative to the viewport origin, of the top of the rectangle box. Read only.
+        left - X-coordinate, relative to the viewport origin, of the left of the rectangle box.
 
 
 
