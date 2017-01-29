@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>Chirashi v5.1.5 | Documentation</title>
+  <title>ChirashiJS | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -13,8 +13,8 @@
     <div class='clearfix md-mxn2'>
       <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
         <div class='py1 px2'>
-          <h3 class='mb0 no-anchor'>Chirashi</h3>
-          <div class='mb1'><code>v5.1.5</code></div>
+          <h3 class='mb0 no-anchor'>ChirashiJS</h3>
+          <div class='mb1'><code>v6.0.0</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -165,9 +165,9 @@
 
 
                 <li><a
-                  href='#createelement'
+                  href='#regex'
                   class="">
-                  createElement
+                  regex
 
                 </a>
 
@@ -405,16 +405,6 @@
 
 
                 <li><a
-                  href='#unbindcallback'
-                  class="">
-                  unbindCallback
-
-                </a>
-
-                </li>
-
-
-                <li><a
                   href='#bind'
                   class="">
                   bind
@@ -435,9 +425,9 @@
 
 
                 <li><a
-                  href='#eventcallback'
+                  href='#unbindcallback'
                   class="">
-                  eventCallback
+                  unbindCallback
 
                 </a>
 
@@ -448,6 +438,16 @@
                   href='#offcallback'
                   class="">
                   offCallback
+
+                </a>
+
+                </li>
+
+
+                <li><a
+                  href='#eventcallback'
+                  class="">
+                  eventCallback
 
                 </a>
 
@@ -645,9 +645,9 @@
 
 
                 <li><a
-                  href='#transformation'
+                  href='#transform'
                   class="">
-                  Transformation
+                  transform
 
                 </a>
 
@@ -655,9 +655,9 @@
 
 
                 <li><a
-                  href='#transform'
+                  href='#transformation'
                   class="">
-                  transform
+                  Transformation
 
                 </a>
 
@@ -876,7 +876,7 @@ Chirashi.forEach(<span class="hljs-number">0</span>, <span class="hljs-function"
   <p>Iterates over dom elements and apply callback on each one.</p>
 
 
-  <div class='pre p1 fill-light mt0'>forElements(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), callback: <a href="#forelementscallback">forElementsCallback</a>, forceOrder: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>forElements(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), callback: <a href="#forelementscallback">forElementsCallback</a>, forceOrder: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>]): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -924,14 +924,8 @@ Chirashi.forEach(<span class="hljs-number">0</span>, <span class="hljs-function"
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        items for chaining.
 
 
 
@@ -1294,7 +1288,7 @@ Chirashi.forIn(californiaRoll, (key, value) =&gt; {
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>:
-        element - The dom element from input or false if no element found.
+        element - The dom element from input.
 
 
 
@@ -1316,7 +1310,7 @@ append(<span class="hljs-built_in">document</span>.body, [sushi, unagi, yakitori
 getElement(<span class="hljs-string">'div'</span>) <span class="hljs-comment">//returns: &lt;div class="sushi"&gt;&lt;/div&gt;</span>
 getElement(<span class="hljs-string">'.yakitori, .sashimi'</span>) <span class="hljs-comment">//returns: &lt;div class="yakitori"&gt;&lt;/div&gt;</span>
 getElement([sushi, unagi, <span class="hljs-string">'.sashimi'</span>, <span class="hljs-string">'.unknown'</span>]) <span class="hljs-comment">//returns: &lt;div class="sushi"&gt;&lt;/div&gt;</span>
-getElement(<span class="hljs-string">'.wasabi'</span>) <span class="hljs-comment">//returns: null</span></pre>
+getElement(<span class="hljs-string">'.wasabi'</span>) <span class="hljs-comment">//returns: undefined</span></pre>
 
 
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//es5</span>
@@ -1328,7 +1322,7 @@ Chirashi.append(<span class="hljs-built_in">document</span>.body, [sushi, unagi,
 Chirashi.getElement(<span class="hljs-string">'div'</span>) <span class="hljs-comment">//returns: &lt;div class="sushi"&gt;&lt;/div&gt;</span>
 Chirashi.getElement(<span class="hljs-string">'.yakitori, .sashimi'</span>) <span class="hljs-comment">//returns: &lt;div class="yakitori"&gt;&lt;/div&gt;</span>
 Chirashi.getElement([sushi, unagi, <span class="hljs-string">'.sashimi'</span>, <span class="hljs-string">'.unknown'</span>]) <span class="hljs-comment">//returns: &lt;div class="sushi"&gt;&lt;/div&gt;</span>
-Chirashi.getElement(<span class="hljs-string">'.wasabi'</span>) <span class="hljs-comment">//returns: null</span></pre>
+Chirashi.getElement(<span class="hljs-string">'.wasabi'</span>) <span class="hljs-comment">//returns: undefined</span></pre>
 
 
 
@@ -1355,10 +1349,10 @@ Chirashi.getElement(<span class="hljs-string">'.wasabi'</span>) <span class="hlj
   </div>
 
 
-  <p>Get dom element recursively from iterable or selector.</p>
+  <p>Get dom element recursively from iterable or selector. Note that to improve performances, the NodeList returned will be live if the selector allow it.</p>
 
 
-  <div class='pre p1 fill-light mt0'>getElements(input: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>getElements(input: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -1388,14 +1382,8 @@ Chirashi.getElement(<span class="hljs-string">'.wasabi'</span>) <span class="hlj
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from input.
 
 
 
@@ -1546,7 +1534,7 @@ Chirashi.isDomElement(<span class="hljs-string">'.sushi'</span>) <span class="hl
   <p>Iterates over classes and add it on each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>addClass(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), classes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>addClass(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), classes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -1584,14 +1572,8 @@ Chirashi.isDomElement(<span class="hljs-string">'.sushi'</span>) <span class="hl
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -1737,10 +1719,10 @@ Chirashi.append(maki, [avocado, <span class="hljs-string">'.cheese[data-cheese="
   </div>
 
 
-  <p>Returns an array of element's children.</p>
+  <p>Returns an element's children.</p>
 
 
-  <div class='pre p1 fill-light mt0'>children(element: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</div>
+  <div class='pre p1 fill-light mt0'>children(element: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)): HTMLCollection</div>
 
 
 
@@ -1770,14 +1752,8 @@ Chirashi.append(maki, [avocado, <span class="hljs-string">'.cheese[data-cheese="
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>:
-        children - Array of element's children or false if elements has no children property or isn't a dom element.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        children.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>HTMLCollection</code>:
+        children - Element's children or null if elements has no children property or isn't a dom element.
 
 
 
@@ -2014,8 +1990,8 @@ Chirashi.closest(<span class="hljs-string">'.avocado'</span>, <span class="hljs-
 
   <div class='clearfix'>
 
-    <h3 class='fl m0' id='createelement'>
-      createElement
+    <h3 class='fl m0' id='regex'>
+      regex
     </h3>
 
 
@@ -2025,7 +2001,7 @@ Chirashi.closest(<span class="hljs-string">'.avocado'</span>, <span class="hljs-
   <p>Creates a dom element from an HTML string, tag or css selector.</p>
 
 
-  <div class='pre p1 fill-light mt0'>createElement(string: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>)</div>
+  <div class='pre p1 fill-light mt0'>regex</div>
 
 
 
@@ -2207,7 +2183,7 @@ Chirashi.filter(<span class="hljs-string">'div'</span>, <span class="hljs-string
   <p>Iterates over each element of elements and returns an array containing all elements' children matching a selector.</p>
 
 
-  <div class='pre p1 fill-light mt0'>find(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), selector: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>find(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), selector: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -2245,14 +2221,8 @@ Chirashi.filter(<span class="hljs-string">'div'</span>, <span class="hljs-string
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        found - The elements' children matching the selector.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        found.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        found - The elements' descendants matching the selector.
 
 
 
@@ -3392,7 +3362,7 @@ Chirashi.prev(avocado) <span class="hljs-comment">//returns: &lt;div class="salm
   <p>Iterates over elements and removes it from DOM.</p>
 
 
-  <div class='pre p1 fill-light mt0'>remove(element: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), elements: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>remove(element: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), elements: any): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -3429,14 +3399,8 @@ Chirashi.prev(avocado) <span class="hljs-comment">//returns: &lt;div class="salm
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The removed elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        removedElements - The array or nodelist of removed dom elements.
 
 
 
@@ -3494,7 +3458,7 @@ Chirashi.remove(<span class="hljs-string">'.cheese'</span>) <span class="hljs-co
   <p>Iterates over attributes and removes it from each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>removeAttr(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), attributes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>removeAttr(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), attributes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -3532,14 +3496,8 @@ Chirashi.remove(<span class="hljs-string">'.cheese'</span>) <span class="hljs-co
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -3593,7 +3551,7 @@ Chirashi.removeAttr(<span class="hljs-string">'.salmon'</span>, <span class="hlj
   <p>Iterates over classes and remove it from each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>removeClass(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), classes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>removeClass(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), classes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -3631,14 +3589,8 @@ Chirashi.removeAttr(<span class="hljs-string">'.salmon'</span>, <span class="hlj
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -3688,7 +3640,7 @@ Chirashi.removeClass(maki, <span class="hljs-string">'cheese, wasabi'</span>) <s
   <p>Iterates over attributes and removes it from each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>removeData(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), attributes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>removeData(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), attributes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -3726,14 +3678,8 @@ Chirashi.removeClass(maki, <span class="hljs-string">'cheese, wasabi'</span>) <s
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -3787,7 +3733,7 @@ Chirashi.removeData(<span class="hljs-string">'.salmon'</span>, <span class="hlj
   <p>Iterates over attributes as key value pairs and apply on each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setAttr(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), Object: any, attributes: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setAttr(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), Object: any, attributes: any): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -3832,14 +3778,8 @@ Chirashi.removeData(<span class="hljs-string">'.salmon'</span>, <span class="hlj
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -3893,7 +3833,7 @@ Chirashi.setAttr(maki, {
   <p>Iterates over data-attributes as key value pairs and apply on each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setData(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), Object: any, dataAttributes: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setData(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), Object: any, dataAttributes: any): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -3938,14 +3878,8 @@ Chirashi.setAttr(maki, {
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -3999,7 +3933,7 @@ Chirashi.setData(maki, {
   <p>Set the inner html of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setHtml(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), html: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setHtml(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), html: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -4037,14 +3971,8 @@ Chirashi.setData(maki, {
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The removed elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -4096,7 +4024,7 @@ getHtml(maki) <span class="hljs-comment">//returns: "salmon"</span></pre>
   <p>Apply props as key value pairs on each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setProp(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), Object: any, props: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setProp(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a>), Object: any, props: any): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -4141,14 +4069,8 @@ getHtml(maki) <span class="hljs-comment">//returns: "salmon"</span></pre>
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The removed elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -4200,7 +4122,7 @@ Chirashi.getProp(maki, <span class="hljs-string">'value'</span>) <span class="hl
   <p>Iterates over classes and toggle it on each element of elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>toggleClass(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), classes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), input: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>toggleClass(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">window</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">document</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTMLElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">SVGElement</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Text</a>), classes: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>), input: any): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -4245,14 +4167,8 @@ Chirashi.getProp(maki, <span class="hljs-string">'value'</span>) <span class="hl
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The removed elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -4291,65 +4207,6 @@ Chirashi.toggleClass([maki, scdMaki], {
     <span class="hljs-keyword">return</span> Chirashi.getData(element, <span class="hljs-string">'for'</span>) !== <span class="hljs-string">'leonard'</span>
   }
 }) <span class="hljs-comment">//returns: [&lt;div class="maki salmon cheese" data-for="sheldon"&gt;&lt;/div&gt;, &lt;div class="maki salmon" data-for="leonard"&gt;&lt;/div&gt;]</span></pre>
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-  <div class='clearfix'>
-
-    <h3 class='fl m0' id='unbindcallback'>
-      unbindCallback
-    </h3>
-
-
-  </div>
-
-
-  <p>Called to unbind one or all events.</p>
-
-
-  <div class='pre p1 fill-light mt0'>unbindCallback</div>
-
-
-
-
-
-
-
-
-
-
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>events</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</code> The events to unbind. Must be provided in the same syntax as in input.
-
-          </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
 
 
 
@@ -4569,18 +4426,18 @@ listener.unbind() <span class="hljs-comment">//remove all listeners</span></pre>
 
   <div class='clearfix'>
 
-    <h3 class='fl m0' id='eventcallback'>
-      eventCallback
+    <h3 class='fl m0' id='unbindcallback'>
+      unbindCallback
     </h3>
 
 
   </div>
 
 
-  <p>Callback to execute on event.</p>
+  <p>Called to unbind one or all events.</p>
 
 
-  <div class='pre p1 fill-light mt0'>eventCallback</div>
+  <div class='pre p1 fill-light mt0'>unbindCallback</div>
 
 
 
@@ -4596,7 +4453,7 @@ listener.unbind() <span class="hljs-comment">//remove all listeners</span></pre>
 
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">Event</a>)</code> Triggered event.
+            <span class='code bold'>events</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</code> The events to unbind. Must be provided in the same syntax as in input.
 
           </div>
 
@@ -4664,6 +4521,65 @@ listener.unbind() <span class="hljs-comment">//remove all listeners</span></pre>
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>events</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</code> The events to unbind. Must be provided in the same syntax as in input.
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='eventcallback'>
+      eventCallback
+    </h3>
+
+
+  </div>
+
+
+  <p>Callback to execute on event.</p>
+
+
+  <div class='pre p1 fill-light mt0'>eventCallback</div>
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">Event</a>)</code> Triggered event.
 
           </div>
 
@@ -4769,7 +4685,7 @@ listener.unbind() <span class="hljs-comment">//remove all listeners</span></pre>
 <span class="hljs-keyword">const</span> sushi = createElement(<span class="hljs-string">'a.wasabi.sushi'</span>)
 append(<span class="hljs-built_in">document</span>.body, [maki, sushi])
 <span class="hljs-keyword">const</span> listener = on(<span class="hljs-string">'.cheese, .wasabi'</span>, {
-  click(e, target) =&gt; {
+  click(e, target) {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'clicked'</span>, target)
   },
   <span class="hljs-string">'mouseenter mousemove'</span>: <span class="hljs-function">(<span class="hljs-params">e, target</span>) =&gt;</span> {
@@ -5203,7 +5119,7 @@ Chirashi.trigger(sushi, <span class="hljs-string">'click'</span>) <span class="h
   <p>Clear inline style properties from elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>clearStyle(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), style: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>, props: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>clearStyle(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), style: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>, props: any): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -5248,14 +5164,8 @@ Chirashi.trigger(sushi, <span class="hljs-string">'click'</span>) <span class="h
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -5894,7 +5804,7 @@ Chirashi.getWidth(maki) <span class="hljs-comment">//returns: 220</span></pre>
   <p>Hide each element of elements using visibility.</p>
 
 
-  <div class='pre p1 fill-light mt0'>hide(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>hide(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -5924,14 +5834,8 @@ Chirashi.getWidth(maki) <span class="hljs-comment">//returns: 220</span></pre>
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -6386,7 +6290,7 @@ Chirashi.screenPosition(poulp) <span class="hljs-comment">// returns: { top: 200
   <p>Set the provided height to elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setHeight(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), height: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setHeight(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), height: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -6424,14 +6328,8 @@ Chirashi.screenPosition(poulp) <span class="hljs-comment">// returns: { top: 200
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -6486,7 +6384,7 @@ Chirashi.setHeight(<span class="hljs-string">'.maki'</span>, <span class="hljs-s
   <p>Set the provided size to elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setSize(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), width: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>), height: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setSize(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), width: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>), height: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -6532,14 +6430,8 @@ Chirashi.setHeight(<span class="hljs-string">'.maki'</span>, <span class="hljs-s
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -6592,7 +6484,7 @@ Chirashi.setSize(<span class="hljs-string">'.maki'</span>, <span class="hljs-num
   <p>Set the provided style to elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setStyle(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), style: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setStyle(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), style: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)>): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -6630,14 +6522,8 @@ Chirashi.setSize(<span class="hljs-string">'.maki'</span>, <span class="hljs-num
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -6732,7 +6618,7 @@ Chirashi.setStyle(<span class="hljs-string">'.maki'</span>, {
   <p>Set the provided width to elements.</p>
 
 
-  <div class='pre p1 fill-light mt0'>setWidth(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), width: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>setWidth(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), width: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -6770,14 +6656,8 @@ Chirashi.setStyle(<span class="hljs-string">'.maki'</span>, {
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -6832,7 +6712,7 @@ Chirashi.setWidth(<span class="hljs-string">'.maki'</span>, <span class="hljs-st
   <p>Show each element of elements using visibility.</p>
 
 
-  <div class='pre p1 fill-light mt0'>show(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  <div class='pre p1 fill-light mt0'>show(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
 
 
 
@@ -6862,14 +6742,8 @@ Chirashi.setWidth(<span class="hljs-string">'.maki'</span>, <span class="hljs-st
 
 
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
 
 
 
@@ -6892,6 +6766,119 @@ getStyle(maki, <span class="hljs-string">'visibility'</span>) <span class="hljs-
 Chirashi.append(<span class="hljs-built_in">document</span>.body, <span class="hljs-string">'.maki'</span>)
 <span class="hljs-keyword">var</span> maki = Chirashi.show(<span class="hljs-string">'.maki'</span>)
 Chirashi.getStyle(maki, <span class="hljs-string">'visibility'</span>) <span class="hljs-comment">// returns: "visible"</span></pre>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+  <div class='clearfix'>
+
+    <h3 class='fl m0' id='transform'>
+      transform
+    </h3>
+
+
+  </div>
+
+
+  <p>Compute and apply 3d transform matrix from provided transformation to each element of elements.</p>
+
+
+  <div class='pre p1 fill-light mt0'>transform(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), transformation: <a href="#transformation">Transformation</a>): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</div>
+
+
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector.
+
+          </div>
+
+        </div>
+
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="#transformation">Transformation</a>)</code> The transformation as an object
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection)</code>:
+        domElements - The array or nodelist of dom elements from elements.
+
+
+
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
+        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
+
+
+
+
+
+
+
+
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+
+
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//esnext</span>
+<span class="hljs-keyword">import</span> { createElement, setHtml, transform } <span class="hljs-keyword">from</span> <span class="hljs-string">'chirashi'</span>
+<span class="hljs-keyword">const</span> wasabiPea = createElement(<span class="hljs-string">'p'</span>)
+setHtml(wasabiPea, <span class="hljs-string">'Wasabi'</span>)
+transform(wasabiPea, {}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">scale</span>: <span class="hljs-number">2</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">4</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,3,0,0,0,0,4,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">rotate</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(0.53,0.85,0,0,-0.85,0.53,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.31,0.65,-0.91,0,-0.65,-0.4,0.85,0,0.91,-0.85,0.21,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">skew</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,1.62,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,-0.13,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>}, <span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}, <span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.62,2.27,-0.91,0,-0.78,-1.2,0.85,0,0.91,-0.85,0.21,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span></pre>
+
+
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//es5</span>
+<span class="hljs-keyword">var</span> wasabiPea = Chirashi.createElement(<span class="hljs-string">'p'</span>)
+Chirashi.setHtml(wasabiPea, <span class="hljs-string">'Wasabi'</span>)
+Chirashi.transform(wasabiPea, {}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">scale</span>: <span class="hljs-number">2</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">4</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,3,0,0,0,0,4,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">rotate</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(0.53,0.85,0,0,-0.85,0.53,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.31,0.65,-0.91,0,-0.65,-0.4,0.85,0,0.91,-0.85,0.21,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">skew</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,1.62,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,-0.13,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
+Chirashi.transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>}, <span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}, <span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.62,2.27,-0.91,0,-0.78,-1.2,0.85,0,0.91,-0.85,0.21,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span></pre>
 
 
 
@@ -7036,119 +7023,6 @@ Chirashi.getStyle(maki, <span class="hljs-string">'visibility'</span>) <span cla
 
 
 
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-  <div class='clearfix'>
-
-    <h3 class='fl m0' id='transform'>
-      transform
-    </h3>
-
-
-  </div>
-
-
-  <p>Compute and apply 3d transform matrix from provided transformation to each element of elements.</p>
-
-
-  <div class='pre p1 fill-light mt0'>transform(elements: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection), transformation: <a href="#transformation">Transformation</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
-
-
-
-
-
-
-
-
-
-
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>elements</span> <code class='quiet'>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">NodeList</a> | HTMLCollection))</code> The iterable or selector.
-
-          </div>
-
-        </div>
-
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>transformation</span> <code class='quiet'>(<a href="#transformation">Transformation</a>)</code> The transformation as an object
-
-          </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        domElements - The array of dom elements from elements.
-
-
-
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function</a></code>:
-        domElements.chrshPush - Methods to push dom elements into the array. Accepts same input as getElements.
-
-
-
-
-
-
-
-
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-
-
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//esnext</span>
-<span class="hljs-keyword">import</span> { createElement, setHtml, transform } <span class="hljs-keyword">from</span> <span class="hljs-string">'chirashi'</span>
-<span class="hljs-keyword">const</span> wasabiPea = createElement(<span class="hljs-string">'p'</span>)
-setHtml(wasabiPea, <span class="hljs-string">'Wasabi'</span>)
-transform(wasabiPea, {}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">scale</span>: <span class="hljs-number">2</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">4</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,3,0,0,0,0,4,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">rotate</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(0.53,0.85,0,0,-0.85,0.53,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.31,0.65,-0.91,0,-0.65,-0.4,0.85,0,0.91,-0.85,0.21,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">skew</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,1.62,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,-0.13,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>}, <span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}, <span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.62,2.27,-0.91,0,-0.78,-1.2,0.85,0,0.91,-0.85,0.21,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span></pre>
-
-
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//es5</span>
-<span class="hljs-keyword">var</span> wasabiPea = Chirashi.createElement(<span class="hljs-string">'p'</span>)
-Chirashi.setHtml(wasabiPea, <span class="hljs-string">'Wasabi'</span>)
-Chirashi.transform(wasabiPea, {}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">scale</span>: <span class="hljs-number">2</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,2,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">4</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(2,0,0,0,0,3,0,0,0,0,4,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">rotate</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(0.53,0.85,0,0,-0.85,0.53,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.31,0.65,-0.91,0,-0.65,-0.4,0.85,0,0.91,-0.85,0.21,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">skew</span>: <span class="hljs-number">45</span>}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,1.62,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(1,1.62,0,0,-0.13,1,0,0,0,0,1,0,0,0,0,1)"&gt;Wasabi&lt;/p&gt;]</span>
-Chirashi.transform(wasabiPea, {<span class="hljs-attr">x</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">scale</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">3</span>}, <span class="hljs-attr">rotate</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">45</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">15</span>}, <span class="hljs-attr">skew</span>: {<span class="hljs-attr">x</span>: <span class="hljs-number">25</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">45</span>}}) <span class="hljs-comment">// returns: [&lt;p style="transform: "matrix3d(-0.62,2.27,-0.91,0,-0.78,-1.2,0.85,0,0.91,-0.85,0.21,0,5,6,7,1)"&gt;Wasabi&lt;/p&gt;]</span></pre>
 
 
 
